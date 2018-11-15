@@ -1,0 +1,500 @@
+    9  cd workspace/
+   10  ls
+   11  cd movie-fun/
+   12  git status
+   13  git branch
+   14  git checkout master
+   15  git add -p
+   16  git commit -m "adding stuff"
+   17  git push
+   18  git branch
+   19  git checkout -b this-used-to-be-detached
+   20  git branch
+   21  git status
+   22  git checkout master
+   23  git status
+   24  git checkout -b db-jobs-lab background-jobs-start
+   25  ls
+   26  cd ../assignment-submission/
+   27  ls
+   28  vi build.gradle 
+   29  cat build.gradle 
+   30  cd ../movie-fun/
+   31  ls
+   32  git branch
+   33  cf logs moviefun
+   34  minio server ~/shared
+   35  cd workspace/
+   36  ls
+   37  cd struts-2
+   38  mkdir struts2
+   39  ls
+   40  cd struts2
+   41  git clone https://github.com/ssmith323/struts.git
+   42  ls
+   43  cd struts/
+   44  ls
+   45  mysql -uroot
+   46  mvn spring-boot:run
+   47  mvn spring-boot:run
+   48  mvn spring-boot:run
+   49  mvn spring-boot:run
+   50  mvn clean package
+   51  cf login
+   52  cf push struts -p target/struts.war --random-route --no-start
+   53  cf cs p-mysql 100mb struts-mysql
+   54  cf bind-service struts struts-mysql
+   55  cf start struts
+   56  git status
+   57  git add .
+   58  git commit -m "finishing lab"
+   59  git login -h
+   60  git config --global user.email "s.j.smith@accenture.com"
+   61  git config --global user.name "SJ Smith"
+   62  git commit -m "finishing lab"
+   63  git push
+   64  cd ..
+   65  cd ..
+   66  ls
+   67  cd struts
+   68  ls
+   69  git status
+   70  git diff 
+   71  git add -p
+   72  git status
+   73  git commit -m "updating version of mysql"
+   74  git push
+   75  git branch
+   76  git push origin HEAD:replateform
+   77  git stash
+   78  git branch -b modernize-mvc modernize-mvc-start
+   79  git checkout -b modernize-mvc modernize-mvc-start
+   80  git status
+   81  git branch
+   82  mvn spring-boot:run
+   83  mvn spring-boot:run
+   84  mvn spring-boot:run
+   85  mvn spring-boot:run
+   86  mvn clean package
+   87  mvn spring-boot:run
+   88  ls
+   89  pwd
+   90  ls
+   91  ls
+   92  mvn spring-boot:run
+   93  mvn spring-boot:run
+   94  mvn spring-boot:run
+   95  mvn spring-boot:run
+   96  mvn spring-boot:run
+   97  mvn spring-boot:run
+   98  mvn spring-boot:run
+   99  mvn spring-boot:run
+  100  mvn spring-boot:run
+  101  mvn spring-boot:run
+  102  mvn clean install
+  103  cf login
+  104  cf apps
+  105  cf p -h
+  106  cf push struts -p target/struts.war --random-route
+  107  git status
+  108  git add -p
+  109  git commit -m"complete struts to spring convert
+  110  Stephen is greeeaaatgit commit -m"complete struts to spring convert"
+  111  "
+  112  git commit -m"complete struts to spring convert
+  113  Stephen is greeeaaat\!\!"
+  114  git status
+  115  remote -v
+  116  git remote
+  117  ./gradlew clean build
+  118  ./gradlew bootRun
+  119  ./gradlew bootRun
+  120  ./gradlew applications:movie-service:bootRun
+  121  ./gradlew applications:movie-fun-app:bootRun
+  122  ./gradlew applications:movie-fun-app:bootRun
+  123  ./gradlew appliactions:album-service:bootRun
+  124  ./gradlew applications:album-service:bootRun
+  125  ./gradlew applications:movie-service:bootRun
+  126  ./gradlew applications:movie-fun-app:bootRun
+  127  ./gradlew applications:movie-fun-app:bootRun
+  128  ./gradlew appliactions:album-service:bootRun
+  129  ./gradlew applications:album-service:bootRun
+  130  ./gradlew applications:movie-service:bootRun
+  131  ./gradlew applications:movie-fun-app:bootRun
+  132  ./gradlew applications:movie-fun-app:bootRun
+  133  ./gradlew appliactions:album-service:bootRun
+  134  ./gradlew applications:album-service:bootRun
+  135  cd ..
+  136  ls
+  137  cd struts
+  138  ls
+  139  git status
+  140  git remote -v
+  141  git push -u origin struts
+  142  git branch
+  143  git push -u origin modernize-mvc
+  144  git status
+  145  git remote add other https://github.com/ssmith323/struts.git
+  146  git push other modernize-mvc --tags
+  147  git remote remove other
+  148  git remote -v
+  149  cf login
+  150  cf login
+  151  cf apps
+  152  pwd
+  153  cd ..
+  154  ls -l
+  155  cd movie-fun-modernization/
+  156  git remote add origin https://github.com/ratnakar-bh/movie-fun-modernization.git
+  157  git status
+  158  git add .
+  159  git commit -m"Added movie-fun-gradleization"
+  160  git push -u origin master --tags
+  161  git clean -df
+  162  ./gradlew bootRun --parallel
+  163  ls
+  164  touch .env
+  165  touch ".env"
+  166  touch t.txt
+  167  echo "source ~/workspace/movie-fun-modernization/.env" >> ~/.bashrc
+  168  source ~/.bashrc
+  169  minio start
+  170  minio start-server
+  171  minio --help
+  172  minio server
+  173  minio server /home/shared
+  174  minio update
+  175  minio server ~/shared
+  176  minio server ~/shared
+  177  ls
+  178  cd workspace/
+  179  ls
+  180  cd assignment-submission/
+  181  ls
+  182  ./gradlew modernizationStrutsToSpring -PstrutsAppUrl=https://struts-chatty-bat.apps.pikes.pal.pivotal.io
+  183  cf logout
+  184  ./gradlew modernizationMavenToGradle -PmovieFunUrl=https://movie-fun-app-smart-gecko.apps.pikes.pal.pivotal.io
+  185  ls
+  186  rm -rf ~/.m2/repository/org/
+  187  rm -rf ~/.m2/repository/com
+  188  ls
+  189  cd ../
+  190  ls
+  191  cd movie-fun-modernization/
+  192  ./gradlew clean
+  193  ./gradlew build
+  194  gradle --version
+  195  gradle build
+  196  ls
+  197  idea .
+  198  idea .
+  199  cd ..
+  200  cd assignment-submission/
+  201  ./gradlew modernizationMavenToGradle -PmovieFunUrl=https://movie-fun-app-smart-gecko.apps.pikes.pal.pivotal.io
+  202  ./gradlew modernizationMultipleJars -PmovieFunUrl=https://movie-fun-app-smart-gecko.apps.pikes.pal.pivotal.io
+  203  ./gradlew modernizationMicroservices -PmovieFunUrl=https://movie-fun-app-smart-gecko.apps.pikes.pal.pivotal.io
+  204  ./gradlew modernizationMicroservices -PmovieFunUrl=https://movie-fun-app-smart-gecko.apps.pikes.pal.pivotal.io
+  205  ./gradlew modernizationMicroservices -PmovieFunUrl=https://movie-fun-app-smart-gecko.apps.pikes.pal.pivotal.io
+  206  cf delete movie-service
+  207  ./gradlew modernizationMicroservices -PmovieFunUrl=https://movie-fun-app-smart-gecko.apps.pikes.pal.pivotal.io
+  208  ./gradlew modernizationMicroservices -PmovieFunUrl=https://movie-fun-app-smart-gecko.apps.pikes.pal.pivotal.io
+  209  cf apps
+  210  cf -h
+  211  cf unmap-route album-service movie-fun-app-smart-gecko.apps.pikes.pal.pivotal.io
+  212  clear
+  213  cf unbind-route -h
+  214  cf -h
+  215  cf unmap-route -h
+  216  cf unmap-route album-service apps.pikes.pal.pivotal.io --hostname movie-fun-app-smart-gecko
+  217  cf unmap-route movie-service apps.pikes.pal.pivotal.io --hostname movie-fun-app-smart-gecko
+  218  cf apps
+  219  ./gradlew modernizationMicroservices -PmovieFunUrl=https://movie-fun-app-smart-gecko.apps.pikes.pal.pivotal.io
+  220  ./gradlew modernizationMicroservices -PmovieFunUrl=https://app-smart-gecko.apps.pikes.pal.pivotal.io
+  221  ./gradlew modernizationMicroservices -PmovieFunUrl=https://movie-fun-app-smart-gecko.apps.pikes.pal.pivotal.io
+  222  ./gradlew modernizationMicroservices -PmovieFunUrl=https://movie-fun-app-smart-gecko.apps.pikes.pal.pivotal.io
+  223  git status
+  224  cd ..
+  225  cd movie-fun-modernization/
+  226  echo "source ~/workspace/movie-fun-modernization/.env" >> ~/.bashrc
+  227  source ~/.bashrc
+  228  env
+  229  idea .
+  230  idea .
+  231  git checkout gradlization-start -b gradlization-start-branch
+  232  mysql -uroot
+  233  mysql -uroot -e 'DROP DATABASE IF EXISTS movies; CREATE DATABASE movies;'
+  234  mysql -uroot movies < ~/workspace/movie-fun-modernization/db/schema.ddl
+  235  wrapper
+  236  gradle wrapper
+  237  ./gradlew
+  238  ls
+  239  git status
+  240  ./gradlew init
+  241  ls
+  242  gradle tasks
+  243  gradle bootRun
+  244  gradle bootRun
+  245  gradle bootRun
+  246  clear
+  247  gradle bootRun
+  248  gradle build
+  249  gradle clean build
+  250  gradle clean build
+  251  gradle bootRun
+  252  gradle bootRun
+  253  env
+  254  idea .
+  255  idea .
+  256  mkdir -p ~/shared/moviefun
+  257  echo "source ~/workspace/movie-fun-modernization/.env" >> ~/.bashrc
+  258  source ~/.bashrc
+  259  idea .
+  260  env
+  261  idea .
+  262  git status
+  263  git add .
+  264  git commit -m"movi-fun-gradlization-final"
+  265  git push -u origin master
+  266  git status
+  267  git branch
+  268  git push --tags
+  269  git push --tags
+  270  git branch
+  271  git push -u origin gradlization-start-branch --tags
+  272  git remote add other https://github.com/javaplease42/movie-fun-modernization.git
+  273  git push -u other master
+  274  git push -u other master --tags
+  275  git clean -df
+  276  git checkout -b multiple-jars-branch multiple-jars-start
+  277  ls
+  278  gradle bootRun
+  279  ./gradlew bootRun
+  280  ./gradlew dependenciesGraph
+  281  ./gradlew bootRun
+  282  ./gradlew build
+  283  ./gradlew build
+  284  gradle clean build
+  285  cf push movie-fun-app -p applications/movie-fun-app/build/libs/movie-fun-app-1.1.0-SNAPSHOT.war --no-start --random-route
+  286  cf push movie-fun-app -p applications/movie-fun-app/build/libs/movie-fun-app-1.1.0-SNAPSHOT.war --no-start --random-route
+  287  cf start movie-fun-app
+  288  git status
+  289  git add .
+  290  git commit -m"multiple jar working build"
+  291  git branch
+  292  git remote -v
+  293  git push -u origin multiple-jars-branch
+  294  git status
+  295  git add .
+  296  git commit -m"moved album test to album component"
+  297  git branch
+  298  git push -u origin multiple-jars-branch
+  299  git remote -v
+  300  git push -u other master --tags
+  301  git remote remove other
+  302  git remote -v
+  303  git clean -df
+  304  git remote -v
+  305  git config --local user
+  306  git config --global user.name
+  307  env
+  308  export MOVIES_URL=http://localhost:8082/movies
+  309  env
+  310  idea .
+  311  ./gradlew dependenciesGraph
+  312  ./gradlew dependenciesGraph
+  313  ./gradlew dependenciesGraph
+  314  ./gradlew dependenciesGraph
+  315  ./gradlew dependenciesGraph
+  316  ./gradlew dependenciesGraph
+  317  cf services
+  318  cf cs p-mysql 100mb album-database
+  319  cf bs movie-fun-app album-database
+  320  cf apps
+  321  cf push album-service -p applications/album-service/build/libs/album-service-1.1.0-SNAPSHOT.jar --random-route
+  322  cf bs album-service albums-database
+  323  cf services
+  324  cf bs album-service album-database
+  325  cf start album-service
+  326  cf apps
+  327  cf set-env -h
+  328  cf push -f manifest.yml
+  329  cf services
+  330  cf push -f manifest.yml
+  331  cf services
+  332  cf bs movie-service movie-database
+  333  cf push -f manifest.yml
+  334  cf logs movie-fun-app --recent
+  335  cf services
+  336  cf env movie-fun-app
+  337  cf mysql -h
+  338  cf mysql movies-database
+  339  clear
+  340  cf logs movie-fun-app --recent
+  341  cf env movie-fun-app
+  342  cf env album-service
+  343  clear
+  344  cf services
+  345  cf apps
+  346  cf us movie-fun-app movies-database
+  347  cf us movie-fun-app album-database
+  348  cf restage movie-fun-app
+  349  cf logs movie-fun-app --recent
+  350  cf apps
+  351  cf push movie-fun-app -p applications/movie-fun-app/build/libs/movie-fun-app-1.1.0-SNAPSHOT.war 
+  352  cf push -f manifest.yml
+  353  cf logs movie-fun-app --recent
+  354  mysqld
+  355  mysql
+  356  idea .
+  357  mysql
+  358  mysql -uroot
+  359  env
+  360  Could not resolve placeholder 'albums.url' in value "${albums.url}"
+  361  export ALBUMS_URL=http://localhost:8081/albums
+  362  idea .
+  363  ./gradlew dependenciesGraph
+  364  cf push -f manifest.yml
+  365  cf push -f manifest.yml
+  366  git status
+  367  git add -A
+  368  git stash 
+  369  git status
+  370  git checkout -b microservice-mf microservices-start
+  371  git stash pop
+  372  git status
+  373  cf push -f manifest.yml
+  374  cf push -f manifest.yml
+  375  cf apps
+  376  cf push -f manifest.yml
+  377  cf push -f manifest.yml
+  378  git status
+  379  cf push -f manifest.yml
+  380  git status
+  381  git add .
+  382  git commit -m"Microservices-movie-fun-final"
+  383  git status
+  384  git branch
+  385  git remote -v
+  386  git push -u origin microservices-mf --tags
+  387  git push -u origin microservices-mf
+  388  git push 
+  389  git push --set-upstream origin microservice-mf
+  390  git branch
+  391  git status
+  392  git branch
+  393  git push origin --all
+  394  git push --tags
+  395  git push --tags
+  396  git remote -v
+  397  gradle clean build
+  398  idea .
+  399  env
+  400  ls
+  401  cd build
+  402  ls
+  403  cd libs/
+  404  ls
+  405  ls -lrt
+  406  cf push -p moviefun-1.1.0-SNAPSHOT.war --random-route
+  407  cf target
+  408  cf push movie-fun-app -p moviefun-1.1.0-SNAPSHOT.war --random-route
+  409  cf logs movie-fun-app
+  410  cf logs movie-fun-app --recent
+  411  cf marketplace
+  412  cf cs p-mysql 100mb movies
+  413  cf services
+  414  cf bs movie-fun-app movies
+  415  cf restage movie-fun-app
+  416  cf logs movie-fun-app --recent
+  417  cf services
+  418  cf cups -h
+  419  cf create-user-provided-service photo-storage -p "{\"access_key_id\":\"AKIAJQTUFHPLLNDIBCWQ\",\"secret_access_key\":\"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\",\"bucket\":\"student-artifacts-democrat\",\"endpoint \":\"\"}"
+  420  cf bs movie-fun-app photo-storage
+  421  cf restage movie-fun-app
+  422  cf push movie-fun-app -p moviefun-1.1.0-SNAPSHOT.war --random-route
+  423  cf push movie-fun-app -p moviefun-1.1.0-SNAPSHOT.war --random-route
+  424  clear
+  425  ls
+  426  pwd
+  427  ls
+  428  ls
+  429  pwd
+  430  ls
+  431  cd ..
+  432  ls
+  433  cd ..
+  434  ls
+  435  ls
+  436  cd build
+  437  cd libs/
+  438  ls
+  439  cf push movie-fun-app -p moviefun-1.1.0-SNAPSHOT.war --random-route
+  440  cf services
+  441  cd ..
+  442  pwd
+  443  cd ..
+  444  cd ../../..
+  445  ls
+  446  cd workspace/
+  447  cf marketplace
+  448  cf cs p-mysql 100mb movies-database
+  449  cf apps
+  450  cf services
+  451  cf us movie-fun-app movies
+  452  cf bs movie-fun-app movies-database
+  453  cf restage movie-fun-app
+  454  cf push movie-service -p applications/movie-service/build/libs/movie-service-1.1.0-SNAPSHOT.jar --random-route
+  455  ls
+  456  cd movie-fun-modernization/
+  457  cf push movie-service -p applications/movie-service/build/libs/movie-service-1.1.0-SNAPSHOT.jar --random-route
+  458  mysql -uroot
+  459  cf apps
+  460  cf logout
+  461  cf login
+  462  cf apps
+  463  cf services
+  464  cf services
+  465  cf apps
+  466  cf create-service p-config-server standard movie-fun-config-server \
+  467  git remote -v
+  468  cd ~/workspace/movie-fun-config
+  469  git remote -v
+  470  cf create-service p-config-server standard movie-fun-config-server -c "{\"git\": {\"uri\": \"https://github.com/ShovanBiswas/movie-fun-config.git\", \"label\": \"master\"}}"
+  471  cf services
+  472  cf apps
+  473  cd ..
+  474  ls -l
+  475  cd movie-fun-modernization/
+  476  cf push
+  477  ./gradlew clean build -xtests
+  478  ./gradlew clean build -xtest
+  479  cf push
+  480  ls
+  481  ls -o applications/*/build/libs
+  482  git status
+  483  cf apps
+  484  cf push
+  485  ./gradlew clean
+  486  ./gradlew build -xtest
+  487  cf push
+  488  cf apps
+  489  cf services
+  490  cf apps
+  491  cf push
+  492  cf push
+  493  cf app
+  494  cf apps
+  495  git remote -v
+  496  git status
+  497  git add .
+  498  git commit -m"movie-fun-mod-config-server"
+  499  git branch
+  500  git push -u origin config-server-start-branch
+  501  git push -u other config-server-start-branch
+  502  cf branch
+  503  git branch
+  504  git checkout -b movie-fun-circuit-breaker-branch circuit-breaker-start
+  505  git branch
+  506  ls -l
+  507  pwd
+  508  history > h1
